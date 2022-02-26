@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/hola-mundo', function () {
     return view('hola-mundo');
 });
+
+Route::get('/pokedex/{pokemon}/{tipo?}', function ($pokemon,$tipo = null) {
+    return view('paginas/pokedex', compact('pokemon','tipo'));
+});
