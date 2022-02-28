@@ -18,7 +18,9 @@ class PokemonSeeder extends Seeder
         DB::table('pokemon')->insert([
             'nombre' => 'Charmander',
             'tipo' => 'Fuego',
-            'Descripcion' => 'Este pokemon parece una largatija',
+            'descripcion' => 'Este pokemon parece una largatija',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
 
